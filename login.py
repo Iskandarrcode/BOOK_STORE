@@ -57,22 +57,19 @@ class Login(QMainWindow):
         con.commit()
         
     
-        
-        
-        
     def to_loginn(self):
         self.lamp = True
-        email = self.line_email.text().strip()
-        password = self.line_password.text().strip()
+        self.email = self.line_email.text().strip()
+        self.password = self.line_password.text().strip()
 
      
-        if not (re.fullmatch(self.__reg, email)):
+        if not (re.fullmatch(self.__reg, self.email)):
             self.lamp = False
             self.mes_email.setText("invalid email")
         else:
             self.mes_email.setText("")
         
-        if not (len(password) > 4):
+        if not (len(self.password) > 4):
             self.lamp = False
 
             self.mes_password.setText("invalid password")
@@ -82,7 +79,7 @@ class Login(QMainWindow):
         if self.lamp:
             con = myc.connect(host="localhost", user="root", password="root", database="BOOKS")
             cursor = con.cursor()
-            sql = f"SELECT * FROM Users WHERE Email = '{email}' AND Password = '{password}' "
+            sql = f"SELECT * FROM Users WHERE Email = '{self.email}' AND Password = '{self.password}' "
             cursor.execute(sql)
             data = cursor.fetchall()
             con.commit()
@@ -96,4 +93,3 @@ class Login(QMainWindow):
                 self.line_email.setText("")
                 self.line_password.setText("")
                 
-            

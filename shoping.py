@@ -136,7 +136,7 @@ class Window(QMainWindow):
         self.data2()
         
     def data2(self):
-        for i in range(0, len(self.data)):
+        for i in range(0, len(self.ls)):
             book = str()
             for j in self.data[i]:
                 book += str(j) + " "
@@ -256,18 +256,18 @@ db.Create_table1("Users")
 db.Create_table2("Orders")
 db.Create_table3("Bookss")
 
-# db.Insert_into3("Xamsa", 1500, 85000, "Alisher Navoiy")
-# db.Insert_into3("Atom odatlar", 300, 150000, "Jeyms Klir")
-# db.Insert_into3("Molxona", 100, 15000, "Jorj Oruell")
-# db.Insert_into3("Moliyaviy mustaqillik va erkin hayot sari", 236, 40000, "Devid Bax")
-# db.Insert_into3("Zukkolar va landavurlar", 480, 36000, "Malkolm Gladuell")
-# db.Insert_into3("Chalg'ituvchi dunyoda muvaffaqiyat sirlari", 230, 80000, "Kel Nyuport")
-# db.Insert_into3("Ikki imperiya to'qnashuvi", 744, 51000, "Piter Hopkirk")
-# db.Insert_into3("Murakkab sohaning sodda qiyofasi ", 540, 42000, "Charlz Uilan")
-# db.Insert_into3("qudrat, farovonlik va kambag'allik manbalari", 676, 45000, "Daron Ajemo'g'li")                    
-# db.Insert_into3("Savol ortidagi savol ", 104, 12000, "Jon G. Miller")
-# db.Insert_into3("Stiv Jobs", 624, 91000, "Uolter Ayzekson")
-# db.Insert_into3("Beparvolikning nozik san'ati ", 192, 34000, "Mark Menson")
-# db.Insert_into3("Bir muhabbat tarixi ",496, 42000, "Devid Nikolls")
-# db.Insert_into3("Qo'rqma", 368, 21000, "Javlon Jovliyev")
-# db.Insert_into3("qudrat, farovonlik va kambag'allik manbalari", 676, 45000, "Daron Ajemo'g'li")
+db.Insert_into3("Xamsa", 1500, 85000, "Alisher Navoiy")
+db.Insert_into3("Atom odatlar", 300, 150000, "Jeyms Klir")
+db.Insert_into3("Molxona", 100, 15000, "Jorj Oruell")
+db.Insert_into3("Moliyaviy mustaqillik va erkin hayot sari", 236, 40000, "Devid Bax")
+db.Insert_into3("Zukkolar va landavurlar", 480, 36000, "Malkolm Gladuell")
+db.Insert_into3("Chalg'ituvchi dunyoda muvaffaqiyat sirlari", 230, 80000, "Kel Nyuport")
+db.Insert_into3("Ikki imperiya to'qnashuvi", 744, 51000, "Piter Hopkirk")
+db.Insert_into3("Murakkab sohaning sodda qiyofasi ", 540, 42000, "Charlz Uilan")
+db.Insert_into3("qudrat, farovonlik va kambag'allik manbalari", 676, 45000, "Daron Ajemo'g'li")                    
+db.Insert_into3("Savol ortidagi savol ", 104, 12000, "Jon G. Miller")
+db.Insert_into3("Stiv Jobs", 624, 91000, "Uolter Ayzekson")
+db.Insert_into3("Beparvolikning nozik san'ati ", 192, 34000, "Mark Menson")
+db.Insert_into3("Bir muhabbat tarixi ",496, 42000, "Devid Nikolls")
+db.Insert_into3("Qo'rqma", 368, 21000, "Javlon Jovliyev")
+db.Insert_into3("qudrat, farovonlik va kambag'allik manbalari", 676, 45000, "Daron Ajemo'g'li")
